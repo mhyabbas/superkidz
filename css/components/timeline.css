@@ -1,0 +1,104 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.timeline .event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.timeline .event .thumbnail {
+  display: none;
+}
+
+.timeline .event .content {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 66%;
+  flex-basis: 66%;
+  padding-left: 25px;
+  padding-bottom: 80px;
+}
+
+.timeline .event .content h2 {
+  margin-top: -13px;
+  margin-bottom: 0;
+}
+
+.timeline .event .content:after {
+  content: '';
+  position: absolute;
+  border-left: 2px solid #344154;
+  top: 0;
+  left: -1px;
+  bottom: 100%;
+  transition: all .3s;
+}
+
+.timeline .event .content.active:after {
+  bottom: 0;
+}
+
+.timeline .event .content svg.circle {
+  position: absolute;
+  top: -2px;
+  left: -7px;
+  width: 14px;
+  height: 14px;
+  fill: #FFFFFF;
+  stroke: #354154;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.timeline h3 {
+    font-size: 26px;
+    margin: 10px 0 -10px 0;
+}
+
+@media all and (min-width: 800px) {
+  .timeline .event .thumbnail {
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%;
+    padding-right: 25px;
+    padding-bottom: 80px;
+  }
+
+  .timeline .event .thumbnail img {
+    max-height: 150px;
+    border-radius: 10px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .timeline .event .thumbnail img {
+    max-height: 300px;
+  }
+
+  .timeline .event .content h2 {
+    margin-top: -22px;
+  }
+}

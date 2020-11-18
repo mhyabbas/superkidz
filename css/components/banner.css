@@ -1,0 +1,356 @@
+/*Banner animation*/
+
+.bg-animation {
+	min-height: 500px;
+	background-image: -o-linear-gradient(bottom left, #5F3483, #943791);
+	background-image: -webkit-gradient(linear, left bottom, right top, from(#5F3483), to(#943791));
+	background-image: linear-gradient(to top right, #5F3483, #943791);
+	overflow: hidden;
+}
+
+/*Banner wave animation*/
+
+.bg-animation .svg-wave {
+	position: absolute; 
+	bottom: 0;
+	height: 0; 
+	width: 100%; 
+	padding: 0;
+	padding-bottom: 22.43%; 
+}
+
+.bg-animation svg[class^="wave"] {
+	position: absolute; 
+	left: 0; 
+	top: 0;
+	height: 100%; 
+	width: 100%; 
+	z-index: 0;
+}
+
+.bg-animation .wave-morph1, .bg-animation .wave-morph2, .bg-animation .wave-morph3 {
+	display: none;
+}
+
+/*Banner circle animation*/
+
+.bg-animation svg#circles {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#circles .cr0 {
+	opacity:0.05;
+}
+
+.bg-animation svg#circles .cr1 {
+	fill:none;
+	stroke:#F6F9FC;
+	stroke-width:5;
+	stroke-miterlimit:1;
+}
+
+/*Banner text draw animation*/
+
+.bg-animation svg#letters {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#letters .lt0 {
+	opacity:0.2;
+	fill:none;
+	stroke:#192242;
+	stroke-width:26;
+	stroke-miterlimit:10;
+}
+
+/*Banner text draw animation*/
+
+.bg-animation svg#cald-letters {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#cald-letters .ca0 {
+	opacity:0.2;
+	fill:none;
+	stroke:#192242;
+	stroke-width:14;
+	stroke-miterlimit:10;
+}
+
+/*Banner line pattern animation*/
+
+.bg-animation svg#line-pattern {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#line-pattern .lp0 {
+	opacity:0.2;
+	fill:none;
+	stroke:#192242;
+	stroke-width:15;
+	stroke-miterlimit:10;
+}
+
+/*Banner topographic animation*/
+
+.bg-animation svg#topographic {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#topographic path[id$="end"] {
+	display: none;
+}
+
+.bg-animation svg#topographic .tp0 {
+	fill:#ffffff;
+	fill-opacity:0.04;
+	stroke-opacity:0.2;
+	stroke:#ffffff;
+	stroke-width:1;
+	stroke-miterlimit:2;
+}
+
+/*Banner flax animation*/
+
+.bg-animation svg#flax {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#flax .fl0 {
+	fill:none;
+	stroke-opacity:0.1;
+	stroke:#192242;
+	stroke-width:10;
+	stroke-miterlimit:10;
+}
+
+/*Banner timeline animation*/
+
+.bg-animation svg#timeline {
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#timeline .tl0 {
+	fill:none;
+	stroke:#603483;
+	stroke-width:4;
+	stroke-miterlimit:10;
+}
+
+.bg-animation svg#timeline .tl1 {
+	fill:#603483;
+}
+
+.bg-animation svg#timeline .tl2 {
+	fill:none;
+	stroke:#603483;
+	stroke-width:12;
+	stroke-miterlimit:10;
+}
+
+/*Banner balloon animation*/
+
+.bg-animation #balloons {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-animation #balloons #balloon, .bg-animation #balloons #balloonBunch {
+	display: none;
+}
+
+.bg-animation #balloons .balloon {
+	position: absolute;
+	width: 140px;
+	height: auto;
+}
+
+.bg-animation #balloons .balloonBunch {
+	position: absolute;
+	width: 280px;
+	height: auto;
+}
+
+.bg-animation #balloons .balloonBunch .st0 {
+	fill:#192242;
+	fill-opacity:0.3;
+
+}
+.bg-animation #balloons .balloonBunch .st1 {
+	fill:#FFFFFF;
+	fill-opacity:0.5;
+}
+
+.bg-animation #balloons .balloonBunch .st2 {
+	fill:none;
+	stroke:#FFFFFF;
+	stroke-width:6;
+	stroke-linecap:round;
+	stroke-opacity:0.3;
+}
+
+/*Banner fireworks animation*/
+
+.bg-animation #fireworks {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-animation #fireworks .firework {
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: auto;
+}
+
+.bg-animation #fireworks .fw0 {
+	fill:none;
+	stroke:#192242;
+	stroke-opacity:0.8;
+	stroke-width:7;
+	stroke-linecap:round;
+	stroke-miterlimit:14;
+}
+
+.bg-animation #fireworks .fw-sm {
+	stroke:white;
+	stroke-opacity:0.5;
+}
+
+/*Banner fireworks alternate animation*/
+
+.bg-animation #fireworks2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-animation #fireworks2 .firework2 {
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: auto;
+}
+
+.bg-animation #fireworks2 .fw0 {
+	fill:none;
+	stroke:#192242;
+	stroke-width:4;
+	stroke-linejoin:round;
+	stroke-linecap:round;
+	stroke-miterlimit:8;
+}
+
+.bg-animation #fireworks2 .fw0.short {
+	stroke:#ffffff;
+}
+
+/*Banner fairy lights animation*/
+
+.bg-animation svg#lights {
+	position: absolute;
+	min-width: 100%;
+	top: 0;
+}
+
+.bg-animation svg#lights .fl0 {
+	fill:none;
+	stroke:#182242;
+	stroke-opacity:0.2;
+	stroke-width:1.5;
+	stroke-miterlimit:10;
+}
+
+.bg-animation svg#lights .fl1 {
+	fill:#FFFFFF;
+}
+
+.bg-animation svg#lights .fl2 {
+	fill:#182242;
+	fill-opacity:0.2;
+}
+
+.bg-animation svg#lights .fl3 {
+	fill:#182242;
+}
+
+/*Banner slide and fade animation*/
+
+.bg-animation .slide-in, .bg-animation .fade-in {
+	visibility: hidden;
+}
+
+/*Banner SVG icon animation*/
+
+.bg-animation svg.svg-animation {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: 80%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg polygon[id^="star"] {
+	visibility: hidden;
+}
+
+@media all and (min-width: 1200px) {
+	.bg-animation svg#timeline {
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+	}
+}

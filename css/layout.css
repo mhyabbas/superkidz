@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 50px 0 0 0;
+    line-height: 1.5;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 1;
+}
+
+.column {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.double-column {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.svg-wrapper {
+    position: absolute; 
+    bottom: 0;
+    height: 0; 
+    width: 100%; 
+    padding: 0;
+    padding-bottom: 22.43%;
+}
+
+.svg-wrapper.short {
+    padding-bottom: 16.71%;
+}
+
+svg.svg-divider {
+    position: absolute;
+    display: block;
+    left: 0; 
+    top: 0;
+    height: 102%; 
+    width: 100%; 
+    z-index: 0;
+}
+
+.divider-curve {
+    display: none;
+}
+
+#divider-alt #line {
+    visibility: hidden;
+}
+
+svg.white {
+    fill: white;
+}
+
+svg.grey {
+    fill: #F6F9FC;
+}
+
+svg.purple {
+    fill: #8F5EA7;
+}
+
+.address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.address p:nth-of-type(1) {
+    margin-right: 30px;
+}
+
+.map {
+    width: 100%;
+    height: 315px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.map p.info {
+    font-size: 16px;
+}
+
+.halves {
+    padding: 0;
+}
+
+.half {
+    min-height: 300px;
+    padding: 30px;
+}
+
+@media all and (min-width: 800px) {
+    .container {
+        width: 90%;
+    }
+
+    .map {
+        height: 450px;
+    }
+
+    .halves {
+        display: flex;
+    }
+
+    .half {
+        flex: 1;
+        padding: 50px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    body {
+        padding: 90px 0 0 0;
+    }
+
+    .container {
+        width: 1010px;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .column {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+
+    .double-column {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+    }
+
+    .half {
+        flex: 1;
+        padding: 150px 100px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}

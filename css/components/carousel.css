@@ -1,0 +1,133 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Slick Dots */
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.slick-dots li.slick-active button {
+    background: black;
+}
+
+.slick-dots li button {
+	display: block;
+    width: 9px;
+    height: 9px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background: #C0C0C0;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*Slick Arrows*/
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.slick-arrow.prev {
+	left: -40px;
+}
+
+.slick-arrow.next {
+	right: -40px;
+}
+
+/*Carousel*/
+
+.carousel {
+	width: 100%;
+	max-width: 500px;
+}
+
+.carousel .card {
+	-webkit-box-flex: inherit;
+	    -ms-flex: inherit;
+	        flex: inherit;
+	max-width: 500px;
+	margin: inherit;
+	background: #576784;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.carousel a.card {
+	cursor: pointer;
+}
+
+.carousel a.card:hover .btn.outline.white {
+    border: 1px solid white;
+    background-color: white;
+    color: #334154;
+}
+
+.carousel .card .thumbnail {
+	padding-top: 56.25%;
+}
+
+.carousel .card .content p {
+	color: white;
+	font-size: 18px;
+}
+
+/*Carousel - Full width with bleeding*/
+
+.carousel-full a.card {
+	max-width: none;
+	text-decoration: none;
+}
+
+.carousel-full .slick-arrow {
+	top: 104%;
+	z-index: 1;
+}
+
+.carousel-full .slick-arrow.prev {
+	left: 0;
+}
+
+.carousel-full .slick-arrow.next {
+	right: 0;
+}
+
+@media all and (min-width: 800px) {
+	.slick-arrow.prev {
+		left: -50px;
+	}
+
+	.slick-arrow.next {
+		right: -50px;
+	}
+}

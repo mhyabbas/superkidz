@@ -1,0 +1,275 @@
+body.nav-open {
+  overflow: hidden;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-height: 100%;
+  background: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.nav.active {
+  overflow-y: scroll;
+}
+
+.nav ul {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  color: #C72127;
+}
+
+.nav .toggle {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.nav .toggle a {
+  display: flex;
+  align-items: center;
+}
+
+.nav .toggle i {
+  padding-right: 10px;
+  color: #4D4D50;
+  font-size: 38px;
+  line-height: 0.6;
+}
+
+.nav .logo a {
+  display: block;
+  margin: 5px auto;
+  width: 110px;
+}
+
+.nav .logo img {
+  width: 110px;
+  height: auto;
+}
+
+.nav .item {
+  display: none;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  padding: 10px 5px;
+  width: 97%;
+}
+
+.nav .item.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .item a.dropdown {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .item a.dropdown svg {
+  width: 34px;
+  height: 34px;
+  padding: 5px;
+}
+
+.nav .item a.dropdown svg.arrow-up {
+  display: none;
+}
+
+.nav .item.current a.dropdown svg.arrow-down {
+  display: none;
+}
+
+.nav .item.current a.dropdown svg.arrow-up {
+  display: block;
+}
+
+.nav .item a.btn {
+  margin: 0;
+}
+
+.nav .item a.btn:hover {
+  color: white;
+}
+
+.nav .social {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.nav .social img {
+  width: 35px;
+  height: 35px;
+}
+
+.nav .sub-nav {
+  max-height: 0;
+  min-width: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  transition: all .4s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.nav .item.current .sub-nav {
+  max-height: 1000px;
+}
+
+.nav .sub-item {
+  display: flex;
+  flex: 0 0 100%;
+  padding: 5px 0;
+}
+
+.nav .sub-item a {
+    font-weight: 400;
+}
+
+@media all and (min-width: 1024px) {
+
+  body.nav-open {
+    overflow: visible;
+  }
+
+  .nav {
+    position: absolute;
+  }
+
+  .nav.active {
+    overflow-y: inherit;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav .toggle {
+    display: none;
+  }
+
+  .nav .logo {
+    order: 0;
+    flex: 1 0 auto;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .nav .logo a {
+    margin: 0;
+    width: 150px;
+  }
+
+  .nav .logo img {
+    width: 150px;
+  }
+
+  .nav .item {
+    position: relative;
+    order: 1;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    transition: all .4s;
+  }
+
+  .nav .item.active {
+    display: block;
+  }
+
+  .nav .item:hover .sub-nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav .item.current a.dropdown svg.arrow-down {
+    display: block;
+  }
+
+  .nav .item.current a.dropdown svg.arrow-up {
+    display: none;
+  }
+
+  .nav .item:hover a.dropdown svg.arrow-down {
+    display: none;
+  }
+
+  .nav .item:hover a.dropdown svg.arrow-up {
+    display: block;
+  }
+
+  .nav .item a {
+    position: relative;
+    flex: 1;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .nav .item a.btn {
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
+
+  .nav .item a.dropdown {
+    justify-content: center;
+  }
+
+  .nav .social {
+    position: relative;
+    order: 2;
+    top: inherit;
+    right: inherit;
+    margin-right: 20px;
+  }
+
+  .nav .social img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .nav .sub-nav {
+    position: absolute;
+    display: none;
+    top: 90px;
+    left: -15px;
+    width: 240px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .nav .item:hover .sub-nav {
+    max-height: 1000px;
+  }
+
+  .nav .sub-item {
+    flex-basis: 100%;
+    align-self: stretch;
+  }
+
+  .nav .sub-item a {
+    margin: 0 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

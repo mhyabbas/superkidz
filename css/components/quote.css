@@ -1,0 +1,49 @@
+.quote {
+	position: relative;
+	margin: 30px auto;
+	width: 80%;
+	max-width: 750px;
+}
+
+.speech {
+	padding: 30px;
+	font-size: 20px;
+}
+
+.speech.slick-slider {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.slick-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 25px;
+    height: 40px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.slick-slider .prev {
+    left: -30px;
+    background-image: url('../../assets/arrow-left.svg');
+    background-repeat: no-repeat;
+}
+
+.slick-slider .next {
+    right: -30px;
+    background-image: url('../../assets/arrow-right.svg');
+    background-repeat: no-repeat;
+}
+
+.speech .slick-slide {
+	outline: 0;
+}
+
+.speech svg {
+	width: 49px;
+	height: 46px;
+	fill: #C72127;
+}

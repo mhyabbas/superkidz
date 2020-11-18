@@ -1,0 +1,245 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.form.padding {
+	padding: 20px;
+}
+
+.form.light {
+	background: #F6F9FC;
+	border-radius: 10px;
+}
+
+.form p {
+	color: #334154;
+	font-size: 14px;
+}
+
+.form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-bottom: 20px;
+}
+
+.form label {
+	margin-bottom: 5px;
+	color: #334253;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+}
+
+.form input.text,
+.form textarea
+{
+	padding: 10px 15px;
+	border: 1px solid #757D8C;
+	border-radius: 4px;
+	color: #334253;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.form div.field {
+	margin: 0 0 20px 0;
+}
+
+.form-group input.text:focus,
+.form textarea:focus
+{
+	outline: 1px solid #8F5EA7;
+}
+
+.form-group.form-short {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+.form .btn, .btn-toolbar input {
+	cursor: pointer;
+}
+
+.btn-toolbar {
+	margin-top: 30px;
+}
+
+.form .form-error-message {
+	position: relative;
+	margin-bottom: 30px;
+	padding-left: 65px;
+	padding-right: 10px;
+	border: 1px solid #CA0000;
+	border-radius: 4px;
+	background-color: #F9E6E6;
+	font-size: 14px;
+}
+
+.form .form-error-message::before {
+    content: "\e002";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #CA0000;
+    font-family: "Material Icons";
+    font-size: 34px;
+}
+
+.form .form-error-message > p {
+	font-weight: bold;
+}
+
+.form .form-error-message a {
+	color: inherit;
+}
+
+.form span.message.error {
+	display: block;
+	position: relative;
+	margin: 5px 0 0 0;
+	padding-left: 30px;
+	color: #CA0000;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.form span.message.error::before {
+    content: "\e002";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #CA0000;
+    font-family: "Material Icons";
+    font-size: 24px;
+}
+
+.form .requiredField.error {
+	border: 2px solid #CA0000;
+}
+
+
+/*Dark form*/
+
+.form.dark {
+	background: #334154;
+	border-radius: 10px;
+}
+
+.form.dark p {
+	color: white;
+}
+
+.form.dark .form-group label {
+	color: white;
+}
+
+.form.dark .form-group input {
+	background-color: rgba(0, 0, 0, .1);
+	border-color: #677794;
+	color: white;
+}
+
+.form.dark .form-error-message > p {
+	color: inherit;
+}
+
+.form.dark .form-error {
+	color: #FF5050;
+}
+
+.form.dark input:required:invalid {
+	border: 2px solid #FF5050;
+}
+
+.form.dark .form-error::before {
+    color: #FF5050;
+}
+
+/*	Userforms overrides */
+.userform label.left {
+	font-weight: 600;
+}
+
+/*	Mailchimp form */
+#mc_embed_signup form {
+	background: #F6F9FC;
+	padding: 20px 50px 40px 50px !important;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+#mc_embed_signup * {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+}
+
+#mc_embed_signup .mc-field-group {
+	width: 100% !important;
+}
+
+#mc_embed_signup .indicates-required {
+	text-align: left !important;
+	margin-bottom: 20px !important;
+}
+
+#mc_embed_signup form input {
+	border: 1px solid #757D8C !important;
+	border-radius: 3px !important;
+	padding: 10px 15px !important;
+	text-indent: 0 !important;
+	font-size: 16px;
+	box-sizing: border-box !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe {
+	margin: 30px 0 0 0px !important;
+	padding: 15px 10% !important;
+	font-weight: normal !important;
+	cursor: pointer;
+	cursor: hand;
+}
+
+@media all and (min-width: 800px) {
+
+	.form-title {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.form-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.form-group {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 49%;
+		flex: 0 0 49%;
+	}
+
+}

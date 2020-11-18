@@ -1,0 +1,32 @@
+/*Text*/
+.yellow {
+	color: #FFBE00;
+}
+
+.red {
+	color: #C72127;
+}
+
+.dark-grey {
+	color: #4D4D50;
+}
+
+/*Background*/
+.bg-white {
+    background-color: white;
+}
+
+.bg-yellow {
+    background-color: #FFBE00;
+}
+
+.bg-light-grey {
+	background-color: #E6E6E6;
+}
+
+.bg-img {
+	background-image: url('../assets/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
